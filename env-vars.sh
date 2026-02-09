@@ -1,0 +1,1 @@
+export localhost_ip=$(ipconfig.exe | grep -m 1 IPv4 | cut -d ':' -f2)
