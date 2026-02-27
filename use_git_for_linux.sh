@@ -17,7 +17,10 @@ done
 if [[ -n $regex ]]; then
   rgx="$regex"
 else 
-  rgx='(?:/mnt/c/|/home/'$(whoami)'|[A-Za-z\s/])+/git'
+    # rgx='(?:/mnt/c/|/home/'$(whoami)'|[A-Za-z\s/])+/git'
+    rgx='(?:/mnt/c/|/home/'$(whoami)'|[A-Za-z\s/])+/git|.*copilot.*|.*chat.*'
+  echo $rgx
+  
   # rgx='git'
 fi
 
